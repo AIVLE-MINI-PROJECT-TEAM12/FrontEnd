@@ -6,13 +6,13 @@
 node -v #버전 확인 -> 18+ 20+ 버전 필요
 
 1. vite 실행
-npm create vite@latest #vite 설치
+npm create vite@latest book_frontEnd -- --template react #vite 설치
 
 ## npm 말고 yarn 사용하는 경우!
 yarn create vite
 
 2. 의존성 설치
-cd frontEnd-app
+cd book_frontEnd
 npm install
 npm run dev
 
