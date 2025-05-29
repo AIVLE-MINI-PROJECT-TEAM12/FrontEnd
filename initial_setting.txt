@@ -1,0 +1,19 @@
+## 초기 프로젝트를 로컬에서 처음 진행할 때,
+## local 환경에서 terminal에 설치해야 하는 library와 설치 명령어 모음입니다!
+## 설치는 clone이 완료된 FrontEnd 파일 경로에서 진행해주세요!
+
+0. node.js version 확인
+node -v #버전 확인 -> 18+ 20+ 버전 필요
+
+1. vite 실행
+npm create vite@latest #vite 설치
+
+## npm 말고 yarn 사용하는 경우!
+yarn create vite
+
+2. 의존성 설치
+cd frontEnd-app
+npm install
+npm run dev
+
+3. 
