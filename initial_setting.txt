@@ -16,4 +16,8 @@ cd book_frontEnd
 npm install
 npm run dev
 
-3. 
+3. book_frontEnd 폴더로 이동 후 실행: mui core, 아이콘 설치
+npm install @mui/material @emotion/react @emotion/styled @mui/icons-material
+
+4. axios, react router 설치
+npm install axios react-router-dom
