@@ -14,7 +14,9 @@ yarn create vite
 2. 의존성 설치
 cd book_frontEnd
 npm install
-npm run dev
+
+npm run dev # vite 실행코드 입니다!
+            # -> 설치 후 실행 잘되는지 확인하고 앞으로 실행할 때 명령어로 사용하세요!
 
 3. book_frontEnd 폴더로 이동 후 실행: mui core, 아이콘 설치
 npm install @mui/material @emotion/react @emotion/styled @mui/icons-material
