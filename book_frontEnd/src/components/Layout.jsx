@@ -11,7 +11,7 @@ function Copyright() {
                 AI Book Platform
             </Link>{' '}
             {new Date().getFullYear()}
-            {.}
+            {'.'}
         </Typography>
     );
 }
