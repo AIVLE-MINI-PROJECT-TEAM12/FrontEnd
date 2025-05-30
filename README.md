@@ -5,12 +5,12 @@ React + Vite + MUI 프론론트엔드와 Spring Boot 백엔드로 구현한 **�
 
 <div align="center" style="margin-bottom: 40px;">
   <strong>로그인 화면</strong><br>
-  <img src="./login.png" alt="로그인 화면" width="500" style="margin-top: 8px;" />
+  <img src="./login.png" alt="로그인 화면" width="600" style="margin-top: 8px;" />
 </div>
 
 <div align="center" style="margin-bottom: 40px;">
   <strong>사용자 책 리스트</strong><br>
-  <img src="./booklist.png" alt="사용자 책 리스트" width="500" style="margin-top: 8px;" />
+  <img src="./booklist.png" alt="사용자 책 리스트" width="600" style="margin-top: 8px;" />
 </div>
 
 
@@ -38,21 +38,20 @@ export default function BookCoverPage() {
 }
 
 
+---
+
 ## 🛠️ 초기 프로젝트 세팅 가이드
 
 로컬 환경에서 프로젝트를 처음 시작할 때 필요한 설치 명령어 모음입니다.  
-아래 순서대로 터미널에서 실행해 주세요.
 
----
 
-### 0️⃣ Node.js 버전 확인
+0️⃣ Node.js 버전 확인
 ```bash
 node -v  # 버전 확인 (v18 이상 권장, v20도 OK)
 ```
 
----
 
-### 1️⃣ Vite 프로젝트 생성
+1️⃣ Vite 프로젝트 생성
 
 - npm 사용 시:
 ```bash
@@ -64,9 +63,8 @@ npm create vite@latest book_frontEnd -- --template react
 yarn create vite book_frontEnd --template react
 ```
 
----
 
-### 2️⃣ 프로젝트 폴더 이동 및 의존성 설치
+2️⃣ 프로젝트 폴더 이동 및 의존성 설치
 ```bash
 cd book_frontEnd
 npm install
@@ -77,16 +75,14 @@ npm install
 npm run dev  # Vite 개발 서버 실행
 ```
 
----
 
-### 3️⃣ MUI(Core + Icons) 설치
+3️⃣ MUI(Core + Icons) 설치
 ```bash
 npm install @mui/material @emotion/react @emotion/styled @mui/icons-material
 ```
 
----
 
-### 4️⃣ Axios, React Router 설치
+4️⃣ Axios, React Router 설치
 ```bash
 npm install axios react-router-dom
 ```
@@ -117,7 +113,7 @@ npm install axios react-router-dom
 
 ## 📂 프로젝트 구조 
 
-### FrontEnd
+### FrontEnd (추후 수정 예정정)
 
 ```text
 src/
