@@ -11,3 +11,4 @@ export const createBook = (data) => API.post('/books', data);
 export const updateBook = (id, data) => API.put(`/books/${id}`, data);
 export const deleteBook = (id) => API.delete(`/books/${id}`);
 export const generateCover = (id) => API.post(`/books/${id}/cover`);
+export const login = (id, name) => API.post(`/books/login`, {'userId' : id, 'userName' : name});
