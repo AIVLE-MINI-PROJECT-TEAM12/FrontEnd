@@ -1,33 +1,38 @@
 import { useEffect, useState } from 'react';
-import { useParams, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { getBooks } from '../api/bookApi';
 import { Container, Typography, Button } from '@mui/material';
 import BookTable from '../components/BookTable';
 import SearchBar from '../components/SearchBar';
 
-export default function BookListPage() {
+export default function MyBooksPage() {
   const [books, setBooks] = useState([]);
   const navigate = useNavigate();
+
+  // 로그인된 사용자 정보
+  const userId = localStorage.getItem('userId');
+  const userName = localStorage.getItem('userName');
 
   useEffect(() => {
     getBooks()
       .then(res => {
-        console.log('✅ 응답:', res.data);
-        setBooks(res.data);
+        const allBooks = res.data;
+        const myBooks = allBooks.filter(book => book.userId === userId);
+        setBooks(myBooks);
       })
       .catch(err => console.error('❌ API 에러:', err));
-  }, []);
+  }, [userId]);
 
   return (
     <Container>
-      <Typography variant="h4" gutterBottom style={{marginTop:"40px"}}>
-        도서목록
+      <Typography variant="h4" gutterBottom style={{ marginTop: "40px" }}>
+        {userName}님의 도서 목록
       </Typography>
       <SearchBar />
       <Button
         variant="contained"
         sx={{ mb: 2 }}
-        style={{marginTop:"40px"}}
+        style={{ marginTop: "40px" }}
         onClick={() => navigate('/books/new')}
       >
         등록 Button
