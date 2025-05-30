@@ -3,15 +3,16 @@
 React + Vite + MUI 프론론트엔드와 Spring Boot 백엔드로 구현한 **도서 관리 서비스**  
 - CRUD·표지 생성(OpenAI DALL·E)·MUI 컴포넌트·Axios API 통신  
 
-<figure>
-  <img src="./login.png" alt="로그인 화면" width="600"/>
-  <figcaption>로그인 화면</figcaption>
-</figure>
+<div align="center" style="margin-bottom: 40px;">
+  <strong>로그인 화면</strong><br>
+  <img src="./login.png" alt="로그인 화면" width="500" style="margin-top: 8px;" />
+</div>
 
-<figure>
-  <img src="./booklist.png" alt="사용자 책 리스트" width="600"/>
-  <figcaption>사용자 책 리스트</figcaption>
-</figure>
+<div align="center" style="margin-bottom: 40px;">
+  <strong>사용자 책 리스트</strong><br>
+  <img src="./booklist.png" alt="사용자 책 리스트" width="500" style="margin-top: 8px;" />
+</div>
+
 
 ---
 
