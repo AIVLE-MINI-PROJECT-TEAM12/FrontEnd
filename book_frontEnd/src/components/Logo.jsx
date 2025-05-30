@@ -7,9 +7,9 @@ const Logo = () => (
     alt="걷기가 서재 로고"
     style={{
         position: "absolute",
-        top: "24px",
+        top: "5px",
         right: "70px",
-        width: "170px",
+        width: "200px",
         zIndex: 1000
         }}
     />
