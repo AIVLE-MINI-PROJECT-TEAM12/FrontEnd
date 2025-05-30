@@ -11,6 +11,8 @@ import SearchBar from '../components/SearchBar';
 export default function MyBooksPage() {
   const [books, setBooks] = useState([]);
   const navigate = useNavigate();
+  const [searchTerm, setSearchTerm] = useState('');
+
 
   // 로그인된 사용자 정보
   const userId = localStorage.getItem('userId');
@@ -26,14 +28,18 @@ export default function MyBooksPage() {
       .catch(err => console.error('❌ API 에러:', err));
   }, [userId]);
 
+ // 필터링된 책 목록
+  const filteredBooks = books.filter((book) =>
+    book.title.toLowerCase().includes(searchTerm.toLowerCase())
+  );
+
   return (
     <Container>
       <Typography variant="h4" gutterBottom mt="100px">
         {userName}님의 도서 목록
         <LocalLibraryIcon color="secondary" style={{fontsize: '20rem', ml:"10rem"}}/>
       </Typography>
-      
-      <SearchBar />
+      <SearchBar onSearch={setSearchTerm} />
       <Button
         variant="contained"
         sx={{ mb: 2 }}
@@ -42,7 +48,7 @@ export default function MyBooksPage() {
       >
         등록
       </Button>
-      <BookTable books={books} />
+      <BookTable books={filteredBooks} /> 
     </Container>
   );
 }

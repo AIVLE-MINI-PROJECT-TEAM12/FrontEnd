@@ -20,7 +20,7 @@ export default function BookListPage() {
 
   return (
     <Container>
-      <Typography variant="h4" gutterBottom style={{marginTop:"40px"}}>
+      <Typography variant="h4" gutterBottom>
         도서목록
       </Typography>
       <SearchBar />

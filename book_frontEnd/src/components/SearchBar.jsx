@@ -7,12 +7,14 @@ import MenuIcon from '@mui/icons-material/Menu';
 import SearchIcon from '@mui/icons-material/Search';
 import DirectionsIcon from '@mui/icons-material/Directions';
 
-const SearchBar = () => {
+const SearchBar = ({onSearch}) => { 
     const inputRef = useRef(null);
 
     const handleSearch = (e) => {
         e.preventDefault();
+        const value= inputRef.current.value;
         console.log(inputRef.current.value);
+        onSearch(value);
     };
 
     return (
