@@ -20,7 +20,7 @@ function App() {
         <Route path="/books/:id" element={<BookDetailPage />} />
         <Route path="/books/:id/edit" element={<BookEditPage />} />
         <Route path="/books/:id/cover" element={<BookCoverPage />} />
-          <Route path="/books/login" element={<LoginPage />} />
+        <Route path="/books/login" element={<LoginPage />} />
       </Routes>
     </BrowserRouter>
   );
