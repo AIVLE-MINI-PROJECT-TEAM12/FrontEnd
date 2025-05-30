@@ -3,16 +3,22 @@
 React + Vite + MUI 프론론트엔드와 Spring Boot 백엔드로 구현한 **도서 관리 서비스**  
 - CRUD·표지 생성(OpenAI DALL·E)·MUI 컴포넌트·Axios API 통신  
 
-![로그인 화면](./login.png)
+<figure>
+  <img src="./login.png" alt="로그인 화면" width="600"/>
+  <figcaption>로그인 화면</figcaption>
+</figure>
 
-![사용자 책 리스트](./booklist.png)
+<figure>
+  <img src="./booklist.png" alt="사용자 책 리스트" width="600"/>
+  <figcaption>사용자 책 리스트</figcaption>
+</figure>
 
 ---
 
 ## 🔧 OpenAI API 연동 안내
 
 OpenAI 기반 표지 이미지를 생성하기 위해,  
-`book_frontEnd/src/pages/BookCoverPage.jsx` 파일에 아래와 같이 API 키키를 작성해야 합니다.
+`book_frontEnd/src/pages/BookCoverPage.jsx` 파일에 아래와 같이 API 키를 작성해야 합니다.
 
 ```javascript
 import { useEffect, useState } from 'react';
