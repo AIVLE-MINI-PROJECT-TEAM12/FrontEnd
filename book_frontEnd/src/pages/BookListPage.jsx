@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { getBooks } from '../api/bookApi';
 import { Container, Typography, Button } from '@mui/material';
 import BookTable from '../components/BookTable';
+import SearchBar from '../components/SearchBar';
 
 export default function BookListPage() {
   const [books, setBooks] = useState([]);
@@ -19,12 +20,14 @@ export default function BookListPage() {
 
   return (
     <Container>
-      <Typography variant="h4" gutterBottom>
+      <Typography variant="h4" gutterBottom style={{marginTop:"40px"}}>
         도서목록
       </Typography>
+      <SearchBar />
       <Button
         variant="contained"
         sx={{ mb: 2 }}
+        style={{marginTop:"40px"}}
         onClick={() => navigate('/books/new')}
       >
         등록 Button
