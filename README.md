@@ -1,6 +1,6 @@
 # 📚 도서관리서비스
 
-React + Vite + MUI 프론론트엔드와 Spring Boot 백엔드로 구현한 **도서 관리 서비스**  
+React + Vite + MUI 프론트엔드와 Spring Boot 백엔드로 구현한 **도서 관리 서비스**  
 - CRUD·표지 생성(OpenAI DALL·E)·MUI 컴포넌트·Axios API 통신  
 
 ---
@@ -118,7 +118,7 @@ npm install axios react-router-dom
 
 ## 📂 프로젝트 구조 
 
-### FrontEnd (추후 수정 예정정)
+### FrontEnd (추후 수정 예정)
 
 ```text
 src/
