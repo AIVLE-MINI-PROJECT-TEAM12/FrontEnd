@@ -33,7 +33,6 @@ const SearchBar = ({onSearch}) => {
             <IconButton type="submit" sx={{ p: '10px' }} aria-label="search">
                 <SearchIcon />
             </IconButton>
-            <Divider sx={{ height: 28, m: 0.5 }} orientation="vertical" />
             
         </Paper>
     );

@@ -11,7 +11,6 @@ import LoginPage from "./pages/LoginPage.jsx";
 function App() {
   return (
     <BrowserRouter>
-      <Logo style={{marginleft: "-100px"}}/>
       <Routes>
         <Route path="/" element={<LoginPage />} />
         <Route path="/books" element={<MyBooksPage />} />

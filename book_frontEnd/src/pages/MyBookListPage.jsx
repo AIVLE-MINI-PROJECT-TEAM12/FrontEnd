@@ -7,6 +7,7 @@ import LocalLibraryIcon from '@mui/icons-material/LocalLibrary';
 import BookTable from '../components/BookTable';
 import SearchBar from '../components/SearchBar';
 import LogoutButton from '../components/LogoutButton';
+import Logo from '../components/Logo';
 
 export default function MyBooksPage() {
   const [books, setBooks] = useState([]);
@@ -35,16 +36,31 @@ export default function MyBooksPage() {
 
   return (
     <Container>
-      <Box sx={{ display: 'flex',
-          justifyContent: 'flex-end',
-          alignItems: 'flex-start',
-          mt: "40px" }}>
-        <LogoutButton />
+      <Box sx={{
+        display: 'flex',
+        justifyContent: 'space-between',
+        alignItems: 'center',
+        mt: 1 
+      }}>
+
+        <Box sx={{display: 'flex', alignItems: 'flex-end'}}>
+          <Typography variant="h3" >
+            {userName}님의 도서 목록
+            <LocalLibraryIcon
+            color="secondary"
+            fontSize='inherit'
+            sx={{fontsize: '3rem', ml: 2}}/>
+          </Typography>
+        </Box>
+
+        <Box sx={{ 
+            gap: '13px',
+            display: 'flex',
+            alignItems: 'center'}}>
+          <LogoutButton />
+          <Logo />
+        </Box>
       </Box>
-      <Typography variant="h4" gutterBottom mt="100px">
-        {userName}님의 도서 목록
-        <LocalLibraryIcon color="secondary" style={{fontsize: '20rem', ml:"10rem"}}/>
-      </Typography>
       <SearchBar onSearch={setSearchTerm} />
       <Button
         variant="contained"
