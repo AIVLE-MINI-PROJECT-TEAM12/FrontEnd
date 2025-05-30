@@ -44,12 +44,12 @@ export default function MyBooksPage() {
       }}>
 
         <Box sx={{display: 'flex', alignItems: 'flex-end'}}>
-          <Typography variant="h3" >
+          <Typography variant="h4" >
             {userName}님의 도서 목록
             <LocalLibraryIcon
             color="secondary"
             fontSize='inherit'
-            sx={{fontsize: '3rem', ml: 2}}/>
+            sx={{fontsize: '2rem', ml: 1}}/>
           </Typography>
         </Box>
 
