@@ -3,14 +3,16 @@
 React + Vite + MUI 프론론트엔드와 Spring Boot 백엔드로 구현한 **도서 관리 서비스**  
 - CRUD·표지 생성(OpenAI DALL·E)·MUI 컴포넌트·Axios API 통신  
 
+---
+
 <div align="center" style="margin-bottom: 40px;">
   <strong>로그인 화면</strong><br>
-  <img src="./login.png" alt="로그인 화면" width="600" style="margin-top: 8px;" />
+  <img src="./login.png" alt="로그인 화면" width="600" style="margin-top: 18px;" />
 </div>
 
 <div align="center" style="margin-bottom: 40px;">
   <strong>사용자 책 리스트</strong><br>
-  <img src="./booklist.png" alt="사용자 책 리스트" width="600" style="margin-top: 8px;" />
+  <img src="./booklist.png" alt="사용자 책 리스트" width="600" style="margin-top: 18px;" />
 </div>
 
 
@@ -29,13 +31,15 @@ import { Container, Typography, Button, CircularProgress } from '@mui/material';
 import axios from 'axios';
 
 export default function BookCoverPage() {
-  const { id } = useParams();
-  const navigate = useNavigate();
-  const [cover, setCover] = useState(null);
-  const [loading, setLoading] = useState(true);
+        const { id } = useParams();
+        const navigate = useNavigate();
+        const [cover, setCover] = useState(null);
+        const [loading, setLoading] = useState(true);
 
-  const openaiApiKey = "YOUR_OPENAI_API_KEY"; // <-- 개인 API 키 입력
-}
+        const openaiApiKey = "YOUR_OPENAI_API_KEY"; // <-- 개인 API 키 입력
+    }
+
+
 
 
 ---
