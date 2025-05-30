@@ -19,7 +19,7 @@ export default function BookListPage() {
 
   return (
     <Container>
-      <Typography variant="h4" gutterBottom>
+      <Typography variant="h4" gutterBottom style={{marginTop: '40px'}}> //간격 조정정
         도서목록
       </Typography>
       <Button
