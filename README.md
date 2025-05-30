@@ -6,14 +6,15 @@ React + Vite + MUI 프론론트엔드와 Spring Boot 백엔드로 구현한 **�
 ---
 
 <div align="center" style="margin-bottom: 40px;">
-  <strong>로그인 화면</strong><br>
+  <h3>로그인 화면</h3>
   <img src="./login.png" alt="로그인 화면" width="600" style="margin-top: 18px;" />
 </div>
 
 <div align="center" style="margin-bottom: 40px;">
-  <strong>사용자 책 리스트</strong><br>
+  <h3>사용자 책 리스트</h3>
   <img src="./booklist.png" alt="사용자 책 리스트" width="600" style="margin-top: 18px;" />
 </div>
+
 
 
 ---
@@ -38,7 +39,7 @@ export default function BookCoverPage() {
 
         const openaiApiKey = "YOUR_OPENAI_API_KEY"; // <-- 개인 API 키 입력
     }
-
+```
 
 
 
