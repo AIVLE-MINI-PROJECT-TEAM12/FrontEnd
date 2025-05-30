@@ -2,11 +2,11 @@ import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { getBooks } from '../api/bookApi';
 import { Container, Typography, Button } from '@mui/material';
-import SvgIcon from '@mui/material/SvgIcon';
+import Box from '@mui/material/Box';
 import LocalLibraryIcon from '@mui/icons-material/LocalLibrary';
-import AddSharpIcon from '@mui/icons-material/AddSharp';
 import BookTable from '../components/BookTable';
 import SearchBar from '../components/SearchBar';
+import LogoutButton from '../components/LogoutButton';
 
 export default function MyBooksPage() {
   const [books, setBooks] = useState([]);
@@ -35,6 +35,12 @@ export default function MyBooksPage() {
 
   return (
     <Container>
+      <Box sx={{ display: 'flex',
+          justifyContent: 'flex-end',
+          alignItems: 'flex-start',
+          mt: "40px" }}>
+        <LogoutButton />
+      </Box>
       <Typography variant="h4" gutterBottom mt="100px">
         {userName}님의 도서 목록
         <LocalLibraryIcon color="secondary" style={{fontsize: '20rem', ml:"10rem"}}/>
