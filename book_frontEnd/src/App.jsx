@@ -1,11 +1,12 @@
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
-import BookListPage from './pages/BookListPage';
+// import BookListPage from './pages/BookListPage';
 import BookFormPage from './pages/BookFormPage';
 import BookDetailPage from './pages/BookDetailPage';
 import BookEditPage from './pages/BookEditPage';
 import BookCoverPage from './pages/BookCoverPage';
 import MyBooksPage from './pages/MyBookListPage';
 import Logo from './components/Logo';
+import LoginPage from "./pages/LoginPage.jsx";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="/books/:id" element={<BookDetailPage />} />
         <Route path="/books/:id/edit" element={<BookEditPage />} />
         <Route path="/books/:id/cover" element={<BookCoverPage />} />
+          <Route path="/books/login" element={<LoginPage />} />
       </Routes>
     </BrowserRouter>
   );
