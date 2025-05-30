@@ -5,10 +5,12 @@ import BookDetailPage from './pages/BookDetailPage';
 import BookEditPage from './pages/BookEditPage';
 import BookCoverPage from './pages/BookCoverPage';
 import MyBooksPage from './pages/MyBookListPage';
+import Logo from './components/Logo';
 
 function App() {
   return (
     <BrowserRouter>
+      <Logo style={{marginleft: "-100px"}}/>
       <Routes>
         <Route path="/" element={<Navigate to="/books" />} />
         <Route path="/books" element={<MyBooksPage />} />

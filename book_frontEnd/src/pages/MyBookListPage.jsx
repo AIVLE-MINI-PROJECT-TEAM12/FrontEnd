@@ -28,7 +28,7 @@ export default function MyBooksPage() {
 
   return (
     <Container>
-      <Typography variant="h4" gutterBottom style={{ marginTop: "40px" }}>
+      <Typography variant="h4" gutterBottom mt="100px">
         {userName}님의 도서 목록
         <LocalLibraryIcon color="secondary" style={{fontsize: '20rem', ml:"10rem"}}/>
       </Typography>
