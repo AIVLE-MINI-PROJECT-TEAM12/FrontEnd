@@ -21,15 +21,12 @@ export default function LoginPage() {
         const data = new FormData(event.currentTarget);
         const userId = data.get('userId')
         const userName = data.get('userName')
-        console.log("userId : ", userId);
-        console.log("userName : ", userName);
 
         try{
             const res = await login(userId, userName);
             console.log("로그인에 성공했습니다.", res.data);
-            localStorage.setItem('userId', res.data.userId);
-            localStorage.setItem('userName', res.data.userName);
-            localStorage.setItem('token', res.token);
+            localStorage.setItem('token',res.data['token']);
+            localStorage.setItem('userName',userName);
             navigate('/books');
         } catch(e){
             console.error("로그인에 실패하였습니다.", e);

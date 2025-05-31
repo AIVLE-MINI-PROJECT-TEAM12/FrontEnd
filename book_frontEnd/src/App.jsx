@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
+import {BrowserRouter, Routes, Route, Navigate} from 'react-router-dom';
 // import BookListPage from './pages/BookListPage';
 import BookFormPage from './pages/BookFormPage';
 import BookDetailPage from './pages/BookDetailPage';
@@ -11,14 +11,16 @@ import LoginPage from "./pages/LoginPage.jsx";
 function App() {
   return (
     <BrowserRouter>
+      <Logo />
       <Routes>
-        <Route path="/" element={<LoginPage />} />
+        <Route path="/" element={<Navigate to={'/auth/login'} /> }/>
         <Route path="/books" element={<MyBooksPage />} />
         {/* <Route path="/books" element={<BookListPage />} /> */}
         <Route path="/books/new" element={<BookFormPage />} />
         <Route path="/books/:id" element={<BookDetailPage />} />
         <Route path="/books/:id/edit" element={<BookEditPage />} />
         <Route path="/books/:id/cover" element={<BookCoverPage />} />
+        <Route path="/auth/login" element={<LoginPage />} />
       </Routes>
     </BrowserRouter>
   );
