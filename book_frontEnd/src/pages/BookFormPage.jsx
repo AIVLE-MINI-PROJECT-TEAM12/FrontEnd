@@ -1,3 +1,4 @@
+// 📁 src/pages/BookFormPage.jsx
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { createBook } from '../api/bookApi';
@@ -11,7 +12,7 @@ import {
 } from '@mui/material';
 
 export default function BookFormPage() {
-  const [form, setForm] = useState({ book_name: '', summary: '', user_name: '' });
+  const [form, setForm] = useState({ book_name: '', summary: '' }); // ✅ user_name 제거
   const navigate = useNavigate();
 
   const handleChange = (e) => {
@@ -19,10 +20,16 @@ export default function BookFormPage() {
   };
 
   const handleSubmit = () => {
-    // 실제 API에 맞게 user_name → user_id 매핑 필요 (여기선 간략히 처리)
-    createBook({ ...form, user_id: 1 })
+    createBook({
+      book_name: form.book_name,
+      summary: form.summary,
+      book_image: null  // 선택 사항
+    })
       .then(() => navigate('/books'))
-      .catch(console.error);
+      .catch(err => {
+        console.error('도서 등록 실패:', err);
+        alert('도서 등록에 실패했습니다. 다시 로그인 해주세요.');
+      });
   };
 
   return (
@@ -56,20 +63,9 @@ export default function BookFormPage() {
           />
         </Box>
 
-        <Box>
-          <Typography variant="subtitle1">3. 작성자 이름을 입력해주세요*</Typography>
-          <TextField
-            fullWidth
-            label="작성자"
-            name="user_name"
-            value={form.user_name}
-            onChange={handleChange}
-          />
-        </Box>
-
         <Box textAlign="right">
-          <Button variant="outlined" onClick={handleSubmit}>
-            완료 Button
+          <Button variant="contained" onClick={handleSubmit}>
+            등록하기
           </Button>
         </Box>
       </Stack>

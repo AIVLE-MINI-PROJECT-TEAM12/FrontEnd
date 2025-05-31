@@ -8,7 +8,7 @@ API.interceptors.request.use(
     (config) => {
       const token = localStorage.getItem('token'); // 또는 sessionStorage
       if (token) {
-        config.headers.Authorization = `${token}`;
+        config.headers.Authorization = `Bearer ${token}`;
       }
       return config;
     },

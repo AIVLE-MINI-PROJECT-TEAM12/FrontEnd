@@ -1,3 +1,4 @@
+// 📁 src/pages/BookCoverPage.jsx
 import { useEffect, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { getBookById } from '../api/bookApi';
@@ -10,8 +11,7 @@ export default function BookCoverPage() {
   const [cover, setCover] = useState(null);
   const [loading, setLoading] = useState(true);
 
-  const openaiApiKey = "//open-ai-key";
-
+  const openaiApiKey = ""
   useEffect(() => {
     getBookById(id)
       .then(res => {
@@ -36,15 +36,22 @@ export default function BookCoverPage() {
         const imageUrl = response.data.data[0].url;
         setCover(imageUrl);
 
-        // ✅ JSON 형태로 전송
-        return axios.post(`/api/v1/books/${id}/cover`, { imageUrl }, {
-  headers: { 'Content-Type': 'application/json' }
-});
+        // ✅ 생성된 이미지 URL을 백엔드로 PATCH 요청
+        return axios.patch(`http://localhost:8080/books/${id}/cover`,
+          { book_image: imageUrl },
+          {
+            headers: {
+              'Content-Type': 'application/json',
+              Authorization: localStorage.getItem('token') // 🔑 JWT 토큰 포함
+            }
+          }
+        );
       })
       .then(() => setLoading(false))
       .catch(err => {
         console.error("❌ 이미지 생성 실패:", err);
         setLoading(false);
+        alert('표지 생성에 실패했습니다. 다시 시도해주세요.');
       });
   }, [id]);
 

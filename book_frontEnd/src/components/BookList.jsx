@@ -1,6 +1,8 @@
+// 📁 src/pages/BookList.jsx
 import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import BookTable from '../components/BookTable';
+import { getBooks } from '../api/bookApi';  // ✅ axios 기반 API 사용
 import {
   Typography,
   Container,
@@ -12,19 +14,23 @@ const BookList = () => {
   const [books, setBooks] = useState([]);
   const navigate = useNavigate();
 
-  useEffect(() => {
-    fetch('http://localhost:8080/api/v1/books')
-      .then(response => {
-        if (!response.ok) throw new Error('네트워크 응답 실패');
-        return response.json();
-      })
-      .then(data => setBooks(data))
-      .catch(error => console.error('API 호출 오류:', error));
-  }, []);
+useEffect(() => {
+  console.log("✅ BookList 진입");
+
+  getBooks()
+    .then(res => {
+      console.log("📦 도서 목록:", res.data);
+      setBooks(res.data);
+    })
+    .catch(err => {
+      console.error("도서 목록 조회 실패:", err);
+    });
+}, []);
+
+
 
   return (
     <Container sx={{ mt: 5 }}>
-      {/* 👉 Stack 적용: 제목과 버튼 수평 배치 */}
       <Stack direction="row" justifyContent="space-between" alignItems="center" mb={3}>
         <Typography variant="h4">도서목록</Typography>
         <Button variant="contained" onClick={() => navigate('/books/new')}>
@@ -32,7 +38,7 @@ const BookList = () => {
         </Button>
       </Stack>
 
-      {/* 👉 도서 테이블 */}
+      {/* 도서 테이블 컴포넌트 */}
       <BookTable books={books} />
     </Container>
   );

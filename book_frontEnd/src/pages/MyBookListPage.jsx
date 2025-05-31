@@ -9,7 +9,7 @@ import SearchBar from '../components/SearchBar';
 import LogoutButton from '../components/LogoutButton';
 import Logo from '../components/Logo';
 
-export default function MyBooksPage() {
+export default function MyBookListPage() {
   const [books, setBooks] = useState([]);
   const navigate = useNavigate();
   const [searchTerm, setSearchTerm] = useState('');
@@ -23,16 +23,15 @@ export default function MyBooksPage() {
     getBooks()
       .then(res => {
         const allBooks = res.data;
-        const myBooks = allBooks.filter(book => book.userId === userId);
+        const myBooks = allBooks.filter(book => book.user_id === userId);  // ✅ 수정됨
         setBooks(myBooks);
       })
       .catch(err => console.error('❌ API 에러:', err));
   }, [userId]);
-
- // 필터링된 책 목록
   const filteredBooks = books.filter((book) =>
-    book.title.toLowerCase().includes(searchTerm.toLowerCase())
+    book.book_name.toLowerCase().includes(searchTerm.toLowerCase())  // ✅ 수정됨
   );
+
 
   return (
     <Container>

@@ -20,6 +20,8 @@ export default function BookDetailPage() {
   const [open, setOpen] = useState(false);
   const navigate = useNavigate();
 
+  const userName = localStorage.getItem('userName'); // ✅ 로그인한 사용자 이름 불러오기
+
   useEffect(() => {
     getBookById(id)
       .then(res => {
@@ -68,7 +70,7 @@ export default function BookDetailPage() {
               }}
             >
               <Typography>제목: {book.book_name}</Typography>
-              <Typography sx={{ mt: 4 }}>작성자: {book.user_name}</Typography>
+              <Typography sx={{ mt: 4 }}>작성자: {userName}</Typography>
               <Typography sx={{ mt: 4 }}>작성일: {book.create_date}</Typography>
               <Typography sx={{ mt: 4 }}>수정일: {book.modify_date}</Typography>
               <Typography sx={{ mt: 4 }}>본문: {book.summary}</Typography>
@@ -78,17 +80,17 @@ export default function BookDetailPage() {
                   sx={{
                     mt: 4,
                     display: 'flex',
-                    alignItems: 'center', // ✅ 중앙 정렬
+                    alignItems: 'center',
                     gap: 2
                   }}
                 >
                   <Typography
                     sx={{
                       position: 'relative',
-                      top: '-80px' // ← "표지:" 위치만 위로 이동
+                      top: '-80px'
                     }}
                   >
-                    표지:
+                    포지:
                   </Typography>
                   <img
                     src={book.book_image}
@@ -105,7 +107,7 @@ export default function BookDetailPage() {
                 </Box>
               ) : (
                 <Typography sx={{ mt: 2, color: 'gray' }}>
-                  ⚠️ 아직 표지가 생성되지 않았습니다.
+                  ⚠️ 아직 포지가 생성되지 않았습니다.
                 </Typography>
               )}
             </Box>
@@ -121,12 +123,12 @@ export default function BookDetailPage() {
                 삭제 Button
               </Button>
               <Button variant="contained" onClick={() => navigate(`/books/${id}/cover`)}>
-                표지 생성 Button
+                포지 생성 Button
               </Button>
             </Stack>
           </Grid>
 
-          {/* 삭제 확인 다이얼로그 */}
+          {/* 삭제 확인 단일로그 */}
           <Dialog open={open} onClose={() => setOpen(false)}>
             <DialogTitle>도서를 삭제하시겠습니까?</DialogTitle>
             <DialogActions sx={{ justifyContent: 'center', mb: 1 }}>
