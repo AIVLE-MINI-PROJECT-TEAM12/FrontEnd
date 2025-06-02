@@ -141,41 +141,61 @@ src/
 ---
 ## 💻서비스 구현 화면
 
-<div align="center" style="margin-bottom: 40px;">
-  <h3 align="left">1️⃣ 로그인 화면</h3>
-  <li align="left"> 서비스의 첫 화면 </li>
-  <li align="left"> 사용자가 로그인 후 본인의 도서 목록으로 접근하도록 함 </li>
-  <img src="./readme_img/login.png" alt="로그인 화면" width="600" style="margin-top: 18px;" />
-</div>
+<div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;">
 
+  <div style="width: 45%; border: 1px solid #ddd; border-radius: 12px; padding: 16px; box-shadow: 2px 2px 12px rgba(0,0,0,0.05);">
+    <h3>1️⃣ 로그인 화면</h3>
+    <ul>
+      <li>서비스의 첫 화면</li>
+      <li>사용자가 로그인 후 본인의 도서 목록으로 접근하도록 함</li>
+    </ul>
+    <div style="margin-top: 12px;">
+      <img src="./readme_img/login.png" alt="로그인 화면" width="100%" />
+    </div>
+  </div>
 
-<div align="center" style="margin-bottom: 40px;">
-  <h3 align="left">2️⃣ 사용자 도서 리스트</h3>
-  <li align="left"> 사용자 개인의 도서를 관리할 수 있는 화면 </li>
-  <li align="left"> 도서의 제목, 작성자, 작성일이 확인 가능하며 버튼으로 상세 보기로 이동 </li>
-  <img src="./readme_img/booklist.png" alt="사용자 책 리스트" width="600" style="margin-top: 18px;" />
-</div>
+  <div style="width: 45%; border: 1px solid #ddd; border-radius: 12px; padding: 16px; box-shadow: 2px 2px 12px rgba(0,0,0,0.05);">
+    <h3>2️⃣ 사용자 도서 리스트</h3>
+    <ul>
+      <li>사용자 개인의 도서를 관리할 수 있는 화면</li>
+      <li>도서의 제목, 작성자, 작성일이 확인 가능하며 버튼으로 상세 보기로 이동</li>
+    </ul>
+    <div style="margin-top: 12px;">
+      <img src="./readme_img/booklist.png" alt="사용자 책 리스트" width="100%" />
+    </div>
+  </div>
 
+  <div style="width: 45%; border: 1px solid #ddd; border-radius: 12px; padding: 16px; box-shadow: 2px 2px 12px rgba(0,0,0,0.05);">
+    <h3>3️⃣ 도서 상세 보기</h3>
+    <ul>
+      <li>도서의 제목, 작성자, 작성일 및 수정일, 본문 내용, 표지를 한 번에 확인</li>
+      <li>정보가 표현되는 배경을 노트로 이미지로 보여주며 작성자가 실제 작성한 듯한 효과 표현</li>
+      <li>도서의 정보를 수정, 삭제하고 표지를 생성할 수 있도록 함</li>
+    </ul>
+    <div style="margin-top: 12px;">
+      <img src="./readme_img/bookmaking.png" alt="도서 등록" width="100%" />
+    </div>
+  </div>
 
-<div align="center" style="margin-bottom: 40px;">
-  <h3 align="left">3️⃣ 도서 상세 보기</h3>
-  <li align="left"> 도서의 제목, 작성자, 작성일 및 수정일, 본문 내용, 표지를 한 번에 확인 </li>
-  <li align="left"> 정보가 표현되는 배경을 노트로 이미지로 보여주며 작성자가 실제 작성한 듯한 효과 표현
-  <li align="left"> 도서의 정보를 수정, 삭제하고 표지를 생성할 수 있도록 함 </li>
-  <img src="./readme_img/bookmaking.png" alt="도서 등록" width="600" style="margin-top: 18px;" />
-</div>
+  <div style="width: 45%; border: 1px solid #ddd; border-radius: 12px; padding: 16px; box-shadow: 2px 2px 12px rgba(0,0,0,0.05);">
+    <h3>4️⃣ 도서 커버 생성</h3>
+    <ul>
+      <li>OpenAI에서 제공하는 DALL·E 3를 통해 책 제목에 맞는 커버 생성 및 삽입</li>
+    </ul>
+    <div style="margin-top: 12px;">
+      <img src="./readme_img/bookcover.png" alt="책 커버 생성" width="100%" />
+    </div>
+  </div>
 
+  <div style="width: 45%; border: 1px solid #ddd; border-radius: 12px; padding: 16px; box-shadow: 2px 2px 12px rgba(0,0,0,0.05);">
+    <h3>5️⃣ 도서 상세정보 수정</h3>
+    <ul>
+      <li>도서의 제목, 본문 내용 수정 가능</li>
+      <li>작성자는 이미 저장된 상태이기 때문에 수정이 불가능함</li>
+    </ul>
+    <div style="margin-top: 12px;">
+      <img src="./readme_img/bookedit.png" alt="도서 상세정보 수정" width="100%" />
+    </div>
+  </div>
 
-<div align="center" style="margin-bottom: 40px;">
-  <h3 align="left">4️⃣ 도서 커버 생성</h3>
-  <li align="left"> OpenAI에서 제공하는 DALL·E 3를 통해 책 제목에 맞는 커버 생성 및 삽입 </li>
-  <img src="./readme_img/bookcover.png" alt="책 커버 생성" width="600" style="margin-top: 18px;" />
-</div>
-
-
-<div align="center" style="margin-bottom: 40px;">
-  <h3 align="left">5️⃣ 도서 상세정보 수정</h3>
-  <li align="left"> 도서의 제목, 본문 내용 수정 가능 </li>
-  <li align="left"> 작성자는 이미 저장된 상태이기 때문에 수정이 불가능함 </li>
-  <img src="./readme_img/bookedit.png" alt="도서 상세정보 수정" width="600" style="margin-top: 18px;" />
 </div>
