@@ -141,7 +141,7 @@ src/
 ---
 ## 💻서비스 구현 화면
  
-<table align="center" width = "500">
+<table align="center" width = "800">
   <!-- 1행 -->
   <tr>
     <th align="center">1️⃣ 로그인 화면</th>
