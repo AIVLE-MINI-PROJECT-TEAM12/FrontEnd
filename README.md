@@ -100,9 +100,9 @@ npm install axios react-router-dom
 | 영역 | 사용 기술 |
 |------|----------|
 | Frontend | **React 18**, **Vite**, **MUI v5**, Axios, React Router v6 |
-| Backend | **Spring Boot 3**, Spring MVC, Spring Data JPA, H2/PostgreSQL |
+| Backend | **Spring Boot 3**, Spring MVC, Spring Data JPA, H2 |
 | AI | **OpenAI Images API (DALL·E 3)** |
-| Infra | Node >= 18, Java 17 |
+| Infra | Node >= 22, Java 17 |
 
 ---
 
@@ -143,7 +143,7 @@ src/
 
 <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;">
 
-  <div style="width: 45%; border: 1px solid #ddd; border-radius: 12px; padding: 16px; box-shadow: 2px 2px 12px rgba(0,0,0,0.05);">
+  <div style="width: 45%; border: 1px solid #ddd; border-radius: 12px; padding: 16px; box-shadow: 2px 2px 12px rgba(0,0,0,0.3);">
     <h3>1️⃣ 로그인 화면</h3>
     <ul>
       <li>서비스의 첫 화면</li>
@@ -154,7 +154,7 @@ src/
     </div>
   </div>
 
-  <div style="width: 45%; border: 1px solid #ddd; border-radius: 12px; padding: 16px; box-shadow: 2px 2px 12px rgba(0,0,0,0.05);">
+  <div style="width: 45%; border: 1px solid #ddd; border-radius: 12px; padding: 16px; box-shadow: 2px 2px 12px rgba(0,0,0,0.3);">
     <h3>2️⃣ 사용자 도서 리스트</h3>
     <ul>
       <li>사용자 개인의 도서를 관리할 수 있는 화면</li>
@@ -165,7 +165,7 @@ src/
     </div>
   </div>
 
-  <div style="width: 45%; border: 1px solid #ddd; border-radius: 12px; padding: 16px; box-shadow: 2px 2px 12px rgba(0,0,0,0.05);">
+  <div style="width: 45%; border: 1px solid #ddd; border-radius: 12px; padding: 16px; box-shadow: 2px 2px 12px rgba(0,0,0,0.3);">
     <h3>3️⃣ 도서 상세 보기</h3>
     <ul>
       <li>도서의 제목, 작성자, 작성일 및 수정일, 본문 내용, 표지를 한 번에 확인</li>
@@ -177,7 +177,7 @@ src/
     </div>
   </div>
 
-  <div style="width: 45%; border: 1px solid #ddd; border-radius: 12px; padding: 16px; box-shadow: 2px 2px 12px rgba(0,0,0,0.05);">
+  <div style="width: 45%; border: 1px solid #ddd; border-radius: 12px; padding: 16px; box-shadow: 2px 2px 12px rgba(0,0,0,0.3);">
     <h3>4️⃣ 도서 커버 생성</h3>
     <ul>
       <li>OpenAI에서 제공하는 DALL·E 3를 통해 책 제목에 맞는 커버 생성 및 삽입</li>
@@ -187,11 +187,10 @@ src/
     </div>
   </div>
 
-  <div style="width: 45%; border: 1px solid #ddd; border-radius: 12px; padding: 16px; box-shadow: 2px 2px 12px rgba(0,0,0,0.05);">
+  <div style="width: 45%; border: 1px solid #ddd; border-radius: 12px; padding: 16px; box-shadow: 2px 2px 12px rgba(0,0,0,0.3);">
     <h3>5️⃣ 도서 상세정보 수정</h3>
     <ul>
       <li>도서의 제목, 본문 내용 수정 가능</li>
-      <li>작성자는 이미 저장된 상태이기 때문에 수정이 불가능함</li>
     </ul>
     <div style="margin-top: 12px;">
       <img src="./readme_img/bookedit.png" alt="도서 상세정보 수정" width="100%" />
