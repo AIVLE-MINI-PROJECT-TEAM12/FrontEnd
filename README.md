@@ -6,23 +6,36 @@ React + Vite + MUI 프론트엔드와 Spring Boot 백엔드로 구현한 **도�
 ---
 
 <div align="center" style="margin-bottom: 40px;">
-  <h3>로그인 화면</h3>
-  <img src="./login.png" alt="로그인 화면" width="600" style="margin-top: 18px;" />
+  <h3>1️⃣ 로그인 화면</h3>
+  <img src="./readme_img/login.png" alt="로그인 화면" width="600" style="margin-top: 18px;" />
 </div>
 
 <div align="center" style="margin-bottom: 40px;">
-  <h3>사용자 책 리스트</h3>
-  <img src="./booklist.png" alt="사용자 책 리스트" width="600" style="margin-top: 18px;" />
+  <h3>2️⃣ 사용자 도서 리스트</h3>
+  <img src="./readme_img/booklist.png" alt="사용자 책 리스트" width="600" style="margin-top: 18px;" />
 </div>
 
+<div align="center" style="margin-bottom: 40px;">
+  <h3>3️⃣ 도서 등록</h3>
+  <img src="./readme_img/bookmaking.png" alt="사용자 책 리스트" width="600" style="margin-top: 18px;" />
+</div>
 
+<div align="center" style="margin-bottom: 40px;">
+  <h3>4️⃣ 책 커버 생성</h3>
+  <img src="./readme_img/bookcover.png" alt="사용자 책 리스트" width="600" style="margin-top: 18px;" />
+</div>
+
+<div align="center" style="margin-bottom: 40px;">
+  <h3>5️⃣ 도서 상세정보 수정</h3>
+  <img src="./readme_img/bookedit.png" alt="사용자 책 리스트" width="600" style="margin-top: 18px;" />
+</div>
 
 ---
 
 ## 🔧 OpenAI API 연동 안내
 
 OpenAI 기반 표지 이미지를 생성하기 위해,  
-`book_frontEnd/src/pages/BookCoverPage.jsx` 파일에 아래와 같이 API 키를 작성해야 합니다.
+`book_frontEnd/src/pages/BookCoverPage.jsx` 파일에 아래와 같이 API 키를 작성합니다.
 
 ```javascript
 import { useEffect, useState } from 'react';
@@ -98,11 +111,11 @@ npm install axios react-router-dom
 ## 🚀 Features
 | 페이지 | 경로 | 주요 기능 |
 |--------|------|-----------|
-| 📗 **BookListPage** | `/books` | 사용자 도서 목록 조회, 테이블 정렬/검색 |
-| 📘 **BookDetailPage** | `/books/:id` | 상세 정보, notepad 배경 + 표지 미리보기 |
-| ✏️ **BookFormPage** | `/books/new` | 도서 등록 (폼 유효성 + Snackbar) |
-| 🖼 **BookCoverPage** | `/books/:id/cover` | OpenAI 이미지 생성 → `/assets/covers` 저장 |
-| ⚡️ **BookEditPage** | `/books/:id/edit` | 기존 데이터 수정 |
+| 📗 [**BookListPage**](https://github.com/AIVLE-MINI-PROJECT-TEAM12/FrontEnd/blob/main/book_frontEnd/src/pages/BookListPage.jsx) | `/books` | 사용자 도서 목록 조회, 테이블 정렬/검색 |
+| 📘 [**BookDetailPage**](https://github.com/AIVLE-MINI-PROJECT-TEAM12/FrontEnd/blob/main/book_frontEnd/src/pages/BookDetailPage.jsx) | `/books/:id` | 상세 정보, notepad 배경 + 표지 미리보기 |
+| ✏️ [**BookFormPage**](https://github.com/AIVLE-MINI-PROJECT-TEAM12/FrontEnd/blob/main/book_frontEnd/src/pages/BookFormPage.jsx) | `/books/new` | 도서 등록 (폼 유효성 + Snackbar) |
+| 🖼 [**BookCoverPage**](https://github.com/AIVLE-MINI-PROJECT-TEAM12/FrontEnd/blob/main/book_frontEnd/src/pages/BookCoverPage.jsx) | `/books/:id/cover` | OpenAI 이미지 생성 → `/assets/covers` 저장 |
+| ⚡️ [**BookEditPage**](https://github.com/AIVLE-MINI-PROJECT-TEAM12/FrontEnd/blob/main/book_frontEnd/src/pages/BookEditPage.jsx) | `/books/:id/edit` | 기존 데이터 수정 |
 
 ---
 
