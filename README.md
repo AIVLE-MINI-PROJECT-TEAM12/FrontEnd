@@ -1,38 +1,10 @@
-# 📚 도서관리서비스
+# FrontEnd
+KT AIVLE Team 12 FrontEnd Team
+
+📚 도서관리서비스
 
 React + Vite + MUI 프론트엔드와 Spring Boot 백엔드로 구현한 **도서 관리 서비스**  
-- CRUD·표지 생성(OpenAI DALL·E)·MUI 컴포넌트·Axios API 통신  
-
----
-
-<div align="center" style="margin-bottom: 40px;">
-  <h3 align="left">1️⃣ 로그인 화면</h3>
-  <img src="./readme_img/login.png" alt="로그인 화면" width="600" style="margin-top: 18px;" />
-</div>
-
-
-<div align="center" style="margin-bottom: 40px;">
-  <h3 align="left">2️⃣ 사용자 도서 리스트</h3>
-  <img src="./readme_img/booklist.png" alt="사용자 책 리스트" width="600" style="margin-top: 18px;" />
-</div>
-
-
-<div align="center" style="margin-bottom: 40px;">
-  <h3 align="left">3️⃣ 도서 등록</h3>
-  <img src="./readme_img/bookmaking.png" alt="도서 등록" width="600" style="margin-top: 18px;" />
-</div>
-
-
-<div align="center" style="margin-bottom: 40px;">
-  <h3 align="left">4️⃣ 책 커버 생성</h3>
-  <img src="./readme_img/bookcover.png" alt="책 커버 생성" width="600" style="margin-top: 18px;" />
-</div>
-
-
-<div align="center" style="margin-bottom: 40px;">
-  <h3 align="left">5️⃣ 도서 상세정보 수정</h3>
-  <img src="./readme_img/bookedit.png" alt="도서 상세정보 수정" width="600" style="margin-top: 18px;" />
-</div>
+- CRUD·표지 생성(OpenAI DALL·E)·MUI 컴포넌트·Axios API 통신
 
 ---
 
@@ -163,3 +135,36 @@ src/
 │   ├─ notepad-bg.png
 │   └─ react.svg
 └─ ...
+
+
+---
+## 💻서비스 구현 화면
+
+<div align="center" style="margin-bottom: 40px;">
+  <h3 align="left">1️⃣ 로그인 화면</h3>
+  <img src="./readme_img/login.png" alt="로그인 화면" width="600" style="margin-top: 18px;" />
+</div>
+
+
+<div align="center" style="margin-bottom: 40px;">
+  <h3 align="left">2️⃣ 사용자 도서 리스트</h3>
+  <img src="./readme_img/booklist.png" alt="사용자 책 리스트" width="600" style="margin-top: 18px;" />
+</div>
+
+
+<div align="center" style="margin-bottom: 40px;">
+  <h3 align="left">3️⃣ 도서 등록</h3>
+  <img src="./readme_img/bookmaking.png" alt="도서 등록" width="600" style="margin-top: 18px;" />
+</div>
+
+
+<div align="center" style="margin-bottom: 40px;">
+  <h3 align="left">4️⃣ 책 커버 생성</h3>
+  <img src="./readme_img/bookcover.png" alt="책 커버 생성" width="600" style="margin-top: 18px;" />
+</div>
+
+
+<div align="center" style="margin-bottom: 40px;">
+  <h3 align="left">5️⃣ 도서 상세정보 수정</h3>
+  <img src="./readme_img/bookedit.png" alt="도서 상세정보 수정" width="600" style="margin-top: 18px;" />
+</div>
