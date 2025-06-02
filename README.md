@@ -143,13 +143,16 @@ src/
 
 <div align="center" style="margin-bottom: 40px;">
   <h3 align="left">1️⃣ 로그인 화면</h3>
-  <li> 서비스의 첫 화면 \n 사용자가 로그인 후 본인의 도서 목록으로 접근하도록 함 </li>
+  <li align="left"> 서비스의 첫 화면 </li>
+  <li align="left"> 사용자가 로그인 후 본인의 도서 목록으로 접근하도록 함 </li>
   <img src="./readme_img/login.png" alt="로그인 화면" width="600" style="margin-top: 18px;" />
 </div>
 
 
 <div align="center" style="margin-bottom: 40px;">
   <h3 align="left">2️⃣ 사용자 도서 리스트</h3>
+  <li align="left"> 서비스의 첫 화면 </li>
+  <li align="left"> 사용자가 로그인 후 본인의 도서 목록으로 접근하도록 함 </li>
   <img src="./readme_img/booklist.png" alt="사용자 책 리스트" width="600" style="margin-top: 18px;" />
 </div>
 
