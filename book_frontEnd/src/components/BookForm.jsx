@@ -26,17 +26,6 @@ export default function BookForm({ form, onChange, onSubmit, buttonLabel }) {
           name="summary"
           value={form.summary}
           onChange={onChange}
-        />
-      </Box>
-
-      <Box>
-        <Typography variant="subtitle1">3. 작성자 이름을 입력해주세요*</Typography>
-        <TextField
-          fullWidth
-          label="작성자"
-          name="user_name"
-          value={form.user_name}
-          onChange={onChange}
           required
         />
       </Box>
