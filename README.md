@@ -160,28 +160,29 @@ src/
   <!-- 2행 -->
   <tr>
     <th align="center">3️⃣ 도서 등록</th>
-    <th align="center">4️⃣ 책 커버 생성</th>
+    <th align="center">4️⃣ 도서 상세 정보</th>
   </tr>
   <tr>
     <td align="center">새로운 도서 등록, 표지 제목 입력 및 전송</td>
-    <td align="center">OpenAI DALL·E를 이용한 커버 이미지 생성</td>
+    <td align="center">도서의 상세 정보 확인</td>
   </tr>
   <tr>
-    <td align="center"><img src="./readme_img/bookmaking.png" width="300"/></td>
-    <td align="center"><img src="./readme_img/bookcover.png" width="300"/></td>
+    <td align="center"><img src="./readme_img/bookadd.png" width="300"/></td>
+    <td align="center"><img src="./readme_img/bookdetail.png" width="300"/></td>
   </tr>
  
   <!-- 3행 -->
   <tr>
-    <th align="center">5️⃣ 도서 정보 수정</th>
-    <th align="center">6️⃣ 사용자 맞춤 서재</th>
+    <th align="center">5️⃣ 도서 커버 생성</th>
+    <th align="center">6️⃣ 상세 정보 수정</th>
   </tr>
   <tr>
-    <td align="center">기존 도서 정보 편집 및 반영</td>
-    <td align="center">사용자별 등록 도서를 분류해 보여주는 화면</td>
+    <td align="center">OpenAI DALL·E를 이용한 커버 이미지 생성</td>
+    <td align="center">도서별 상세 정보 수정</td>
   </tr>
   <tr>
-    <td align="center"><img src="./readme_img/bookedit.png" width="300"/></td>
+    <td align="center"><img src="./readme_img/bookcover.png" width="300"/></td>
+    <td align="center"><img src="./readme_img/bookedit.png" width="300"/></td>    
   </tr>
 </table>
  
