@@ -5,6 +5,7 @@ KT AIVLE Team 12 FrontEnd Team
 
 React + Vite + MUI 프론트엔드와 Spring Boot 백엔드로 구현한 **도서 관리 서비스**  
 - CRUD·표지 생성(OpenAI DALL·E)·MUI 컴포넌트·Axios API 통신
+- “📝 notepad” 스타일 카드 위에 표지 이미지를 오버레이 하는 UI
 
 ---
 
@@ -135,13 +136,14 @@ src/
 │   ├─ notepad-bg.png
 │   └─ react.svg
 └─ ...
-
+```
 
 ---
 ## 💻서비스 구현 화면
 
 <div align="center" style="margin-bottom: 40px;">
   <h3 align="left">1️⃣ 로그인 화면</h3>
+  <li> 서비스의 첫 화면 \n 사용자가 로그인 후 본인의 도서 목록으로 접근하도록 함 </li>
   <img src="./readme_img/login.png" alt="로그인 화면" width="600" style="margin-top: 18px;" />
 </div>
 
