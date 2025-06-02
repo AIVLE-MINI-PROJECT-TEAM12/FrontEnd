@@ -140,9 +140,8 @@ src/
 
 ---
 ## 💻서비스 구현 화면
-<h2 align="center">💻 서비스 구현 화면</h2>
  
-<table align="center">
+<table align="center" width = "500">
   <!-- 1행 -->
   <tr>
     <th align="center">1️⃣ 로그인 화면</th>
