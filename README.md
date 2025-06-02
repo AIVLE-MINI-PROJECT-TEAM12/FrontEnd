@@ -131,21 +131,31 @@ npm install axios react-router-dom
 
 ## 📂 프로젝트 구조 
 
-### FrontEnd (추후 수정 예정)
+### FrontEnd
+
 
 ```text
 src/
 ├─ api/
-│   └─ bookApi.js
+│   ├─ axiosConfig.js
+|   └─ bookApi.js
 ├─ pages/
 │   ├─ BookListPage.jsx
 │   ├─ BookDetailPage.jsx
+│   ├─ BookEditPage.jsx
 │   ├─ BookFormPage.jsx
-│   └─ BookCoverPage.jsx
+│   ├─ BookCoverPage.jsx
+│   ├─ LoginPage.jsx
+│   └─ MyBookListPage.jsx
 ├─ components/
 │   ├─ BackButton.jsx
-│   └─ BookTable.jsx
+│   ├─ BookForm.jsx
+│   ├─ BookList.jsx
+│   ├─ BookTable.jsx
+│   ├─ Logo.jsx
+│   ├─ LogoutButton.jsx
+│   └─ SearchBar.jsx
 ├─ assets/  # 정적 파일
 │   ├─ notepad-bg.png
-│   └─ covers/  # 생성된 표지 저장 폴더
+│   └─ react.svg
 └─ ...
