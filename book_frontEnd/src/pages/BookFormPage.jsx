@@ -25,7 +25,7 @@ export default function BookFormPage() {
       summary: form.summary,
       book_image: null  // 선택 사항
     })
-      .then(() => navigate('/books'))
+      .then(() => navigate('/books/my'))
       .catch(err => {
         console.error('도서 등록 실패:', err);
         alert('도서 등록에 실패했습니다. 다시 로그인 해주세요.');

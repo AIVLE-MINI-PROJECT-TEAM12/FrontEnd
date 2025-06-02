@@ -36,7 +36,7 @@ export default function BookDetailPage() {
 
   const handleDelete = () => {
     deleteBook(id)
-      .then(() => navigate('/books'))
+      .then(() => navigate('/books/my'))
       .catch(error => {
         console.error("❌ 도서 삭제 실패:", error);
       });
@@ -90,7 +90,7 @@ export default function BookDetailPage() {
                       top: '-80px'
                     }}
                   >
-                    포지:
+                    표지:
                   </Typography>
                   <img
                     src={book.book_image}
@@ -107,7 +107,7 @@ export default function BookDetailPage() {
                 </Box>
               ) : (
                 <Typography sx={{ mt: 2, color: 'gray' }}>
-                  ⚠️ 아직 포지가 생성되지 않았습니다.
+                  ⚠️ 아직 표지가 생성되지 않았습니다.
                 </Typography>
               )}
             </Box>
@@ -123,7 +123,7 @@ export default function BookDetailPage() {
                 삭제 Button
               </Button>
               <Button variant="contained" onClick={() => navigate(`/books/${id}/cover`)}>
-                포지 생성 Button
+                표지 생성 Button
               </Button>
             </Stack>
           </Grid>

@@ -57,7 +57,9 @@ export default function BookCoverPage() {
 
   return (
     <Container sx={{ mt: 4 }}>
-      <Typography variant="h5" gutterBottom>표지를 생성 중입니다...</Typography>
+      <Typography variant="h5" gutterBottom>
+        {loading ? '표지를 생성 중입니다...' : '표지 생성 완료'}
+      </Typography>
       {loading && <CircularProgress />}
       {!loading && cover && (
         <>
